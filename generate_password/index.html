@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password_generator</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div>
+            <input readonly placeholder="password" generatedpassword>
+            <button copybutton>
+                <span copiedtextmssg></span>
+                <img src="copy.svg" alt="copy" height="20px" width="30px" >
+            </button>
+        </div>
+        <div>
+            <h3>password length</h3>
+            <p passwordlength>10</p>
+        </div>
+        <input type="range" max="20" min="1" step="1" inputslider>
+        <div allCheckBox>
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Includes Uppercase letters</label>
+            </div>
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Includes lowercase letters</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Numbers">
+                <label for="Numbers">Includes Numbers</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Symbols">
+                <label for="Symbols">Includes Symbols</label>
+            </div>
+        </div>
+        
+        <div>
+            <h3>strength</h3>
+            <div strengthindicator></div>
+        </div>
+        <button passwordgeneratebutton>
+            <h3>generate password</h3>
+        </button>
+    </div>
+    <script src="script1.js"></script>
+
+
+    
+</body>
+</html>
